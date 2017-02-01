@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for manati_translations profile.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function manati_translations_install() {
+}

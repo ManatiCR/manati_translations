@@ -1,0 +1,53 @@
+core: 8.x
+api: 2
+
+# Common attributes.
+defaults:
+  projects:
+    subdir: "contrib"
+
+projects:
+  # Core.
+  drops-8:
+    type: "core"
+    download:
+      type: "git"
+      url: "https://github.com/pantheon-systems/drops-8.git"
+      branch: "master"
+
+  # Projects.
+  admin_toolbar:
+    version: 1.18
+  config_update:
+    version: 1.2
+  ctools:
+    version: 3.0-alpha27
+  devel:
+    version: 1.0-beta1
+  layout_plugin:
+    version: 1.0-alpha23
+  libraries:
+    download:
+      type: "git"
+      url: "https://git.drupal.org/project/libraries.git"
+      branch: 8.x-3.x
+      revision: "5e7ea584db3e5d9aa5acac130bda1359ad048f5c"
+  l10n_client:
+    version: 1.0-alpha1
+  page_manager:
+    version: 1.0-alpha24
+    patch:
+      # https://www.drupal.org/node/2634276
+      - https://www.drupal.org/files/issues/2634276-pm-19.patch
+  panels:
+    version: 3.0-beta5
+  pathauto:
+    version: 1.0-beta1
+  pdf:
+    download:
+      type: "git"
+      url: "https://git.drupal.org/project/pdf.git"
+      branch: 8.x-1.x
+      revision: "f5e546709df38eb41bae6c59d52422c2eecef569"
+  token:
+    version: 1.0-rc1
