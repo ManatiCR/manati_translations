@@ -69,7 +69,7 @@ build:
             ./node_modules/.bin/gulp eslint
             # Overridden features.
             # Available updates.
-            drush @manati_translations.manati_translations.dev ups | grep -qi "update available" && (echo 'Updates available FAIL' && exit 1) || (echo 'No updates available PASS' && exit 0)
+            drush @manati_translations.manati-translations.dev ups | grep -qi "update available" && (echo 'Updates available FAIL' && exit 1) || (echo 'No updates available PASS' && exit 0)
             # Behat tests.
             ./.vendor/bin/behat -p wercker
             # Visual regression tests.
